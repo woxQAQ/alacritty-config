@@ -1,0 +1,43 @@
+import = [
+"~/.config/alacritty/theme/themes/Mariana.toml",
+]
+
+[shell]
+program = "/bin/zsh"
+
+
+[env]
+TERM = "alacritty"
+
+[font]
+normal = { family = "hack nerd font", style = "Regular"}
+size = 18
+bold = {style = "Bold"}
+italic = {style = "Italic"}
+bold_italic = {style = "Bold Italic"}
+builtin_box_drawing = true
+offset={x=1,y=0}
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[scrolling]
+history = 100000
+multiplier = 6
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+save_to_clipboard = true
+
+[cursor]
+style = {shape = "Beam", blinking = "Always"}
+unfocused_hollow = false
+
+[window]
+# startup_mode = "SimpleFullScreen"
+opacity = 0.8
+# decorations = "None"
+title = "Alacritty"
+dynamic_title = true
+class = {instance = "Alacritty", general = "Alacritty"}
+dimensions = { columns= 120, lines = 30}
